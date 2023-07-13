@@ -1,4 +1,3 @@
-alert ("Hi Ya Buddy");
 
 let player; 
 let computerSelection;
