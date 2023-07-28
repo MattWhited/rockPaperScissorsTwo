@@ -5,14 +5,14 @@ let computerSelection;
 playerSelection = prompt("Choose Rock, Paper, or Scissors:");
 computerSelection = Math.floor(Math.random()* 3 + 1)
 
-function getComputerChoice (computerSelection) {{
-   } if (computerSelection = 1) {
-        return ("Rock");
-     } else if (computerSelection = 2) {
-        return ("Paper");
-     } else {
-        return ("Scissors");
-     }
+function getComputerChoice () {
+   if (computerSelection === 1) {
+      return ("Rock");
+   } else if (computerSelection === 2){
+      return ("Paper");
+   } else {
+      return ("Scissor")
+   }
 }
 
 
