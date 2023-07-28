@@ -24,3 +24,18 @@ function getComputerChoice () {
 //computerSelection - and then return a string 
 //that declares the winner of the round like so:
 //"You Lose! Paper beats Rock"
+
+//Make your function’s playerSelection parameter
+//case-insensitive (so users can input rock, 
+// ROCK, RocK or any other variation).
+
+// take players input
+// use built ins to make it either all upper case 
+// or all to lower case. 
+
+// turn players answer into something computer 
+// readable, like 1,2,3...
+
+// compare player answer to computer answer
+// alert what the computers answer was. 
+// alert either win or lose. 
