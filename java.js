@@ -16,6 +16,11 @@ function getComputerChoice () {
 }
 
 
-// if the answer is equal to 0 make it rock
-// if the answer is equal to 1 make it paper
-// if the answer is equal to 2 make it scissors 
+// next step.
+
+//Write a function that plays a single round of 
+//Rock Paper Scissors. The function should take 
+//two parameters - the playerSelection and 
+//computerSelection - and then return a string 
+//that declares the winner of the round like so:
+//"You Lose! Paper beats Rock"
