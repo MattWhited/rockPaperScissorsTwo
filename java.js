@@ -33,10 +33,6 @@ function singleRound () {
 //that declares the winner of the round like so:
 //"You Lose! Paper beats Rock"
 
-//Make your function’s playerSelection parameter
-//case-insensitive (so users can input rock, 
-// ROCK, RocK or any other variation).
-
 // take players input
 // use built ins to make it either all upper case 
 // or all to lower case. 
