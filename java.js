@@ -15,6 +15,14 @@ function getComputerChoice () {
    }
 }
 
+function getPlayerChoice () {
+   return playerSelection.valueOf().toLowerCase();
+}
+
+
+function singleRound () {
+
+}
 
 // next step.
 
