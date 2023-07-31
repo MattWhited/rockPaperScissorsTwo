@@ -7,11 +7,11 @@ computerSelection = Math.floor(Math.random()* 3 + 1)
 
 function getComputerChoice () {
    if (computerSelection === 1) {
-      return ("Rock");
+      return ("rock");
    } else if (computerSelection === 2){
-      return ("Paper");
+      return ("paper");
    } else {
-      return ("Scissor")
+      return ("scissors")
    }
 }
 
@@ -21,7 +21,10 @@ function getPlayerChoice () {
 
 
 function singleRound () {
-
+   alert (`Computer chose ${getComputerChoice()}` )
+   if (getComputerChoice() === getPlayerChoice()){
+      alert("its a tie!");
+   }
 }
 
 // next step.
