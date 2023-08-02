@@ -21,9 +21,17 @@ function getPlayerChoice () {
 
 
 function singleRound () {
-   alert (`Computer chose ${getComputerChoice()}` )
+   alert (`Computer chose ${getComputerChoice()}!` )
    if (getComputerChoice() === getPlayerChoice()){
       alert("its a tie!");
+   } else if (( getComputerChoice() === 'rock') && (getPlayerChoice() === 'scissors')) {
+      alert("You Lose Sucker!");
+   } else if ((getComputerChoice() === 'paper') && (getPlayerChoice() === 'rock')) {
+      alert(" You Lose Dr. Lame Head!");
+   } else if ((getComputerChoice() === 'scissors') && (getPlayerChoice() === 'paper')) {
+      alert("You Lose So Bad You Dumb Nerd!");
+   } else {
+      alert("Congrats! You Win!")
    }
 }
 
