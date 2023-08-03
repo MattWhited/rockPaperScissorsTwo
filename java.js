@@ -44,10 +44,16 @@ playerChoice();
 singleRound();
 }
 
+let playerScore; 
+let computerScore; 
+
  
 // store the answer from single round.
 // once you have played best of five declare a winner. 
 
+// I might be able to store the results of the
+// game as a changing variable.
+// such as computerscore and playerscore. 
 
 
 
