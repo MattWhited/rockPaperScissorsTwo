@@ -35,6 +35,21 @@ function singleRound () {
    }
 }
 
+function game(){
+getPlayerChoice();
+singleRound();
+}
+
+// call singleRound
+// i might have to move my player selection prompt
+// to my single round function so it gets 
+// used for each round. 
+// store the answer from single round.
+// once you have played best of five declare a winner. 
+
+
+
+
 // next step.
 
 // Write a NEW function called game(). 
