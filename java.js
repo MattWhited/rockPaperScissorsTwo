@@ -2,7 +2,7 @@
 let playerSelection;
 let computerSelection;
 
-playerSelection = prompt("Choose Rock, Paper, or Scissors:");
+
 computerSelection = Math.floor(Math.random()* 3 + 1)
 
 function getComputerChoice () {
@@ -13,6 +13,10 @@ function getComputerChoice () {
    } else {
       return ("scissors")
    }
+}
+
+function playerChoice() {
+   playerSelection = prompt("Choose Rock, Paper, or Scissors:");
 }
 
 function getPlayerChoice () {
@@ -36,14 +40,11 @@ function singleRound () {
 }
 
 function game(){
-getPlayerChoice();
+playerChoice();
 singleRound();
 }
 
-// call singleRound
-// i might have to move my player selection prompt
-// to my single round function so it gets 
-// used for each round. 
+ 
 // store the answer from single round.
 // once you have played best of five declare a winner. 
 
@@ -52,7 +53,6 @@ singleRound();
 
 // next step.
 
-// Write a NEW function called game(). 
 // Use the previous function inside of this one 
 // to play a 5 round game that keeps score and 
 // reports a winner or loser at the end.
