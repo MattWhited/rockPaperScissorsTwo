@@ -47,13 +47,12 @@ singleRound();
 let playerScore; 
 let computerScore; 
 
- 
-// store the answer from single round.
-// once you have played best of five declare a winner. 
-
-// I might be able to store the results of the
-// game as a changing variable.
-// such as computerscore and playerscore. 
+function bestOfFive(){
+   // run 'game'
+   // store the result of 'game' in variable
+   // keep track of score until someone hits 3
+   // at 3 points declare a winner. 
+}
 
 
 
