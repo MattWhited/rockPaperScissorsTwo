@@ -2,10 +2,8 @@
 let playerSelection;
 let computerSelection;
 
-
-computerSelection = Math.floor(Math.random()* 3 + 1)
-
 function getComputerChoice () {
+   computerSelection = Math.floor(Math.random()* 3 + 1)
    if (computerSelection === 1) {
       return ("rock");
    } else if (computerSelection === 2){
@@ -44,12 +42,23 @@ playerChoice();
 singleRound();
 }
 
-let playerScore; 
-let computerScore; 
+let playerScore = 0; 
+let computerScore = 0; 
 
 function bestOfFive(){
+   getComputerChoice();
    // run 'game'
+   game(); 
    // store the result of 'game' in variable
+   
+   // if game alerts 'you win', add 1 point to
+   // player, if else, give one point to computer
+   if (alert === ("Congrats! You Win!")) {
+      playerScore++; 
+   } else {
+      computerScore++; 
+   }
+
    // keep track of score until someone hits 3
    // at 3 points declare a winner. 
 }
