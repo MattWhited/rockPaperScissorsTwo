@@ -76,3 +76,16 @@ function bestOfFive(){
    }
 }
 
+// I am moving on to my lessons in coding.
+// I think it is important to note that I am 
+// aware that getComputerChoice does not refresh
+// after each round. it only choses a new item 
+// after the page is refreshed. I don't know why
+// that is or how to fix it right now. 
+
+// Also computerScore and playerScore do not 
+// reset to zero after the bestOfFive game is 
+// finished. I have not figured that out yet 
+// either but I think it is more important to 
+// move on and learn more instead of being a 
+// perfectionist. 
