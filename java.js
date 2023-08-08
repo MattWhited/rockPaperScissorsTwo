@@ -2,8 +2,10 @@
 let playerSelection;
 let computerSelection;
 
+computerSelection = Math.floor(Math.random()* 3 + 1)
+
 function getComputerChoice () {
-   computerSelection = Math.floor(Math.random()* 3 + 1)
+   
    if (computerSelection === 1) {
       return ("rock");
    } else if (computerSelection === 2){
@@ -13,12 +15,14 @@ function getComputerChoice () {
    }
 }
 
+
+
 function playerChoice() {
    playerSelection = prompt("Choose Rock, Paper, or Scissors:");
 }
 
 function getPlayerChoice () {
-   return playerSelection.valueOf().toLowerCase();
+   return (playerSelection.valueOf().toLowerCase());
 }
 
 
