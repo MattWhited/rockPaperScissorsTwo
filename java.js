@@ -31,13 +31,13 @@ function singleRound () {
    if (getComputerChoice() === getPlayerChoice()){
       alert("its a tie!");
    } else if (( getComputerChoice() === 'rock') && (getPlayerChoice() === 'scissors')) {
-      alert("You Lose Sucker!");
+      alert(loser);
    } else if ((getComputerChoice() === 'paper') && (getPlayerChoice() === 'rock')) {
-      alert(" You Lose Dr. Lame Head!");
+      alert(loser);
    } else if ((getComputerChoice() === 'scissors') && (getPlayerChoice() === 'paper')) {
-      alert("You Lose So Bad You Dumb Nerd!");
+      alert(loser);
    } else {
-      alert("Congrats! You Win!")
+      alert(winner);
    }
 }
 
@@ -53,6 +53,8 @@ singleRound();
 
 let playerScore = 0; 
 let computerScore = 0; 
+let winner = "Congrats! You Win!"
+let loser = "You Lose, Better Luck Next Time!"
 
 function bestOfFive(){
    getComputerChoice();
@@ -62,11 +64,20 @@ function bestOfFive(){
    
    // if game alerts 'you win', add 1 point to
    // player, if else, give one point to computer
-   if (alert === ("Congrats! You Win!")) {
-      playerScore++; 
+
+   if (getComputerChoice() === getPlayerChoice()){
+      alert("no one gets a point");
+   } else if (( getComputerChoice() === 'rock') && (getPlayerChoice() === 'scissors')) {
+      computerScore++;
+   } else if ((getComputerChoice() === 'paper') && (getPlayerChoice() === 'rock')) {
+      computerScore++;
+   } else if ((getComputerChoice() === 'scissors') && (getPlayerChoice() === 'paper')) {
+      computerScore++;
    } else {
-      computerScore++; 
+      playerScore++;
    }
+
+
 
    // keep track of score until someone hits 3
    // at 3 points declare a winner. 
