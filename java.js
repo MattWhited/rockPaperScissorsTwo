@@ -74,7 +74,11 @@ function bestOfFive(){
       playerScore++;
    }
 
-
+   if (playerScore === 3){
+      alert ("You beat the computer 3 out of 5!")
+   } else if (computerScore === 3){
+      alert ("You lost to the computer 3 out of 5")
+   }
 
    // keep track of score until someone hits 3
    // at 3 points declare a winner. 
