@@ -41,6 +41,11 @@ function singleRound () {
    }
 }
 
+// singleRound does not work on its own any more
+// because I moved the playerSelection prompt 
+// into a function instead of 'prompting' upon 
+// opening the page. 
+
 function game(){
 playerChoice();
 singleRound();
