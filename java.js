@@ -15,8 +15,6 @@ function getComputerChoice () {
    }
 }
 
-
-
 function playerChoice() {
    playerSelection = prompt("Choose Rock, Paper, or Scissors:");
 }
@@ -24,7 +22,6 @@ function playerChoice() {
 function getPlayerChoice () {
    return (playerSelection.valueOf().toLowerCase());
 }
-
 
 function singleRound () {
    alert (`Computer chose ${getComputerChoice()}!` )
