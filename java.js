@@ -55,12 +55,7 @@ let loser = "You Lose, Better Luck Next Time!"
 
 function bestOfFive(){
    getComputerChoice();
-   // run 'game'
    game(); 
-   // store the result of 'game' in variable
-   
-   // if game alerts 'you win', add 1 point to
-   // player, if else, give one point to computer
 
    if (getComputerChoice() === getPlayerChoice()){
       alert("no one gets a point");
@@ -79,9 +74,6 @@ function bestOfFive(){
    } else if (computerScore === 3){
       alert ("You lost to the computer 3 out of 5")
    }
-
-   // keep track of score until someone hits 3
-   // at 3 points declare a winner. 
 }
 
 
