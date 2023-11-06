@@ -2,10 +2,10 @@
 let playerSelection;
 let computerSelection;
 
-computerSelection = Math.floor(Math.random()* 3 + 1)
+//computerSelection = Math.floor(Math.random()* 3 + 1)
 
-function getComputerChoice () {
-   
+function getComputerChoice (computerSelection = Math.floor(Math.random()* 3 + 1)) {
+
    if (computerSelection === 1) {
       return ("rock");
    } else if (computerSelection === 2){
@@ -13,11 +13,11 @@ function getComputerChoice () {
    } else {
       return ("scissors")
    }
-}
+};
 
-function playerChoice() {
-   playerSelection = prompt("Choose Rock, Paper, or Scissors:");
-}
+//function playerChoice() {
+  // playerSelection = prompt("Choose Rock, Paper, or Scissors:");
+//}
 
 function getPlayerChoice () {
    return (playerSelection.valueOf().toLowerCase());
@@ -80,27 +80,17 @@ rock.addEventListener("click", game);
 paper.addEventListener("click", game);
 scissors.addEventListener("click", game);
 
-// I am moving on to my lessons in coding.
-// I think it is important to note that I am 
+// I am 
 // aware that getComputerChoice does not refresh
 // after each round. it only choses a new item 
-// after the page is refreshed. I don't know why
-// that is or how to fix it right now. 
+// after the page is refreshed.
 
 // Also computerScore and playerScore do not 
 // reset to zero after the bestOfFive game is 
-// finished. I have not figured that out yet 
-// either but I think it is more important to 
-// move on and learn more instead of being a 
-// perfectionist. 
-
+// finished. 
 
 
 // Check List
-// I am putting my assignment/Check List here
-// so I can reference what I am supposed to be
-// doing with out always going back to it. 
-
 
 // In our UI, the player should be able to play 
 //the game by clicking on buttons rather than 
@@ -115,3 +105,12 @@ scissors.addEventListener("click", game);
 // your original code to make it work for this. 
 // That’s OK! Reworking old code is an important
 // part of a programmer’s life.
+
+// the buttons need to be the selectors, not 
+// the prompt box
+
+// computer choice needs to refresh after each game.
+
+// game results needs a tally and a box
+
+
